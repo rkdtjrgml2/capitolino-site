@@ -10,65 +10,55 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="index.html">CAPITOLIN<span>O</span></a>
     <nav class="nav">
-      <a href="index.html">Articles</a>
+      <a href="index.html">Library</a>
+      <a href="charts.html">Charts</a>
       <a href="about.html" class="active">About</a>
       <a href="https://capitolino.substack.com" target="_blank" rel="noopener">Newsletter</a>
-      <a href="https://x.com/soookida" target="_blank" rel="noopener">X</a>
+      <a class="xlink" href="https://x.com/soookida" target="_blank" rel="noopener">X</a>
     </nav>
   </div>
 </header>
-
-<section class="article-head">
-  <div class="wrap">
-    <span class="kicker">About</span>
-    <h1>The story of money.<br>Every story of capital leads here.</h1>
-  </div>
-</section>
-
+<section class="page-head"><div class="wrap"><span class="kicker">About</span><h1>The story of money.<br>Every story of capital leads here.</h1></div></section>
 <main class="wrap-narrow about-body">
-
   <p>Capitolino is an economics publication about markets, macro, and the forces behind them. Long reads that explain one important thing at a time, short notes on what markets are saying right now, and charts built from primary data.</p>
-
   <p>The name comes from the Capitoline Hill in Rome, where the temple of Juno Moneta housed the Roman mint. It is the birthplace of the word money. Money has always been a story about power. Capitolino tells it straight.</p>
-
   <h2>How we write</h2>
-
   <p>Every piece follows the same structure: a claim, the evidence, the mechanism, and what it means for you. Not which narrative is trending, but what is actually moving underneath. Charts are built from primary sources such as FRED and the US Treasury, and every article says where its numbers come from.</p>
-
   <p>We write for smart readers who are not finance professionals. Short sentences. Plain words. Honest uncertainty, clearly labeled.</p>
-
   <h2>Who is behind it</h2>
-
   <p>Capitolino is written by a founder, not a bank analyst. The author has spent a decade building businesses and today runs a consumer health technology company that sells in 42 countries, with granted patents in South Korea, the United States, China, Japan, and Europe. The economics here is read through purchase orders, customs delays, and distributor margins, not just charts.</p>
-
   <h2>Publisher</h2>
-
   <p>Capitolino is published by DARAM INC., a company incorporated in South Korea. DARAM INC. develops and sells consumer health technology products internationally and operates Capitolino as its economics media brand.</p>
-
+  <div class="masthead-box">
+    <div><span>Publisher</span>DARAM INC. (주식회사 다람)</div>
+    <div><span>Representative</span>Seokhee Kang, CEO</div>
+    <div><span>Business Registration No.</span>439-81-02772 (Republic of Korea)</div>
+    <div><span>Address</span>ABC Center 302, 49 Busandaehak-ro, Mulgeum-eup, Yangsan-si, Gyeongsangnam-do 50612, Republic of Korea</div>
+    <div><span>Editorial contact</span>editor@capitolino.org</div>
+  </div>
   <h2>Where to find us</h2>
-
-  <p>New issues are published on this site and delivered by email through <a href="https://capitolino.substack.com" target="_blank" rel="noopener" style="color:var(--orange); border-bottom:1px solid var(--orange);">Substack</a>. Daily notes and charts are posted on <a href="https://x.com/soookida" target="_blank" rel="noopener" style="color:var(--orange); border-bottom:1px solid var(--orange);">X @soookida</a>.</p>
-
-  <p>Contact: editor@capitolino.org</p>
-
+  <p>New issues are published on this site and delivered by email through <a class="inline" href="https://capitolino.substack.com" target="_blank" rel="noopener">Substack</a>. Daily notes and charts are posted on <a class="inline xlink" href="https://x.com/soookida" target="_blank" rel="noopener">X <span class="xhandle">@soookida</span></a>.</p>
 </main>
-
 <footer class="site-footer">
   <div class="wrap">
     <span class="foot-logo">CAPITOLIN<span>O</span></span>
     <div class="foot-links">
       <a href="https://capitolino.substack.com" target="_blank" rel="noopener">Substack</a>
-      <a href="https://x.com/soookida" target="_blank" rel="noopener">X @soookida</a>
+      <a class="xlink" href="https://x.com/soookida" target="_blank" rel="noopener">X <span class="xhandle">@soookida</span></a>
       <a href="about.html">About</a>
     </div>
-    <p class="foot-legal">Capitolino is published by DARAM INC. © 2026 DARAM INC. All rights reserved. Nothing here is investment advice.</p>
+    <p class="foot-legal">Capitolino is published by DARAM INC. (Business Registration No. 439-81-02772), ABC Center 302, 49 Busandaehak-ro, Mulgeum-eup, Yangsan-si, Gyeongsangnam-do, Republic of Korea. © 2026 DARAM INC. All rights reserved. Nothing here is investment advice.</p>
   </div>
 </footer>
-
+<script>
+// Change this one line when the X handle changes.
+var X_HANDLE = "soookida";
+document.querySelectorAll("a.xlink").forEach(function(a){ a.href = "https://x.com/" + X_HANDLE; });
+document.querySelectorAll(".xhandle").forEach(function(s){ s.textContent = "@" + X_HANDLE; });
+</script>
 </body>
 </html>

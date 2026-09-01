@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charts — Capitolino</title>
+<meta name="description" content="Charts by Capitolino, built from FRED, US Treasury, and market data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">CAPITOLIN<span>O</span></a>
+    <nav class="nav">
+      <a href="index.html">Library</a>
+      <a href="charts.html" class="active">Charts</a>
+      <a href="about.html">About</a>
+      <a href="https://capitolino.substack.com" target="_blank" rel="noopener">Newsletter</a>
+      <a class="xlink" href="https://x.com/soookida" target="_blank" rel="noopener">X</a>
+    </nav>
+  </div>
+</header>
+<section class="page-head"><div class="wrap"><span class="kicker">Charts</span><h1>Every chart here is ours.</h1><p class="lede">Built from primary data: FRED, the US Treasury, market feeds. Cream paper, one story per chart, handwritten where a line needs a voice. Free to share with credit.</p></div></section>
+<main class="wrap chart-grid"><figure id="chart_gold_five_currencies" class="chart-fig">
+  <img src="img/chart_gold_five_currencies.png" alt="Gold Priced in Five Currencies" loading="lazy">
+  <figcaption><strong>Gold Priced in Five Currencies</strong> Jan 2020 = 100. Every line goes up.</figcaption>
+</figure><figure id="chart_30y_vs_cpi" class="chart-fig">
+  <img src="img/chart_30y_vs_cpi.jpg" alt="30 Year Yield vs CPI" loading="lazy">
+  <figcaption><strong>30 Year Yield vs CPI</strong> Prices cooling, borrowing cost rising.</figcaption>
+</figure><figure id="chart1_30y_history" class="chart-fig">
+  <img src="img/chart1_30y_history.png" alt="The 30 Year Treasury Yield, 1977 to Today" loading="lazy">
+  <figcaption><strong>The 30 Year Treasury Yield, 1977 to Today</strong> Half a century in one line.</figcaption>
+</figure><figure id="chart2_three_yields" class="chart-fig">
+  <img src="img/chart2_three_yields.png" alt="Three Maturities, One Story" loading="lazy">
+  <figcaption><strong>Three Maturities, One Story</strong> 2, 10, and 30 year yields.</figcaption>
+</figure><figure id="chart3_spread" class="chart-fig">
+  <img src="img/chart3_spread.png" alt="The Recession Whisperer" loading="lazy">
+  <figcaption><strong>The Recession Whisperer</strong> 10 year minus 2 year, recessions shaded.</figcaption>
+</figure><figure id="chart_m2" class="chart-fig">
+  <img src="img/chart_m2.png" alt="US Money Supply (M2)" loading="lazy">
+  <figcaption><strong>US Money Supply (M2)</strong> 23.2 trillion dollars and a handwritten note.</figcaption>
+</figure><figure id="chart_usdjpy_160" class="chart-fig">
+  <img src="img/chart_usdjpy_160.png" alt="USD/JPY and the 160 Line" loading="lazy">
+  <figcaption><strong>USD/JPY and the 160 Line</strong> Days above 160, 2024 vs 2026.</figcaption>
+</figure><figure id="chart_rate_gap" class="chart-fig">
+  <img src="img/chart_rate_gap.png" alt="US vs Japan Policy Rate Gap" loading="lazy">
+  <figcaption><strong>US vs Japan Policy Rate Gap</strong> Why the yen fell.</figcaption>
+</figure></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="foot-logo">CAPITOLIN<span>O</span></span>
+    <div class="foot-links">
+      <a href="https://capitolino.substack.com" target="_blank" rel="noopener">Substack</a>
+      <a class="xlink" href="https://x.com/soookida" target="_blank" rel="noopener">X <span class="xhandle">@soookida</span></a>
+      <a href="about.html">About</a>
+    </div>
+    <p class="foot-legal">Capitolino is published by DARAM INC. (Business Registration No. 439-81-02772), ABC Center 302, 49 Busandaehak-ro, Mulgeum-eup, Yangsan-si, Gyeongsangnam-do, Republic of Korea. © 2026 DARAM INC. All rights reserved. Nothing here is investment advice.</p>
+  </div>
+</footer>
+<script>
+// Change this one line when the X handle changes.
+var X_HANDLE = "soookida";
+document.querySelectorAll("a.xlink").forEach(function(a){ a.href = "https://x.com/" + X_HANDLE; });
+document.querySelectorAll(".xhandle").forEach(function(s){ s.textContent = "@" + X_HANDLE; });
+</script>
+</body>
+</html>
